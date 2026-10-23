@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yash Dalavi | Full-Stack, DevOps & AI Engineer</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    colors: {
+                        brand: {
+                            50: '#f0f6ff',
+                            500: '#3b82f6',
+                            600: '#2563eb',
+                            900: '#1e3a8a',
+                            neon: '#6366f1',
+                            accent: '#10b981'
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <!-- FontAwesome & Google Fonts -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Plus Jakarta Sans', sans-serif; }
+        .glass-card {
+            background: rgba(15, 23, 42, 0.75);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.08);
+        }
+        .glass-card:hover {
+            border-color: rgba(99, 102, 241, 0.4);
+            box-shadow: 0 0 25px -5px rgba(99, 102, 241, 0.25);
+        }
+        .text-gradient {
+            background: linear-gradient(135deg, #60a5fa 0%, #a855f7 50%, #ec4899 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+    </style>
+</head>
+<body class="bg-slate-950 text-slate-100 antialiased selection:bg-indigo-500 selection:text-white relative overflow-x-hidden">
+
+    <!-- Interactive Background Canvas -->
+    <canvas id="bg-canvas" class="fixed inset-0 pointer-events-none z-0 opacity-40"></canvas>
+
+    <!-- Navigation Bar -->
+    <nav class="fixed top-0 left-0 w-full z-50 glass-card border-b border-slate-800/80 px-6 py-4">
+        <div class="max-w-7xl mx-auto flex justify-between items-center">
+            <a href="#" class="text-2xl font-bold tracking-tight text-white flex items-center gap-2">
+                <span class="w-3 h-3 rounded-full bg-indigo-500 animate-pulse"></span>
+                Yash<span class="text-indigo-400">.Dalavi</span>
+            </a>
+            <div class="hidden md:flex items-center gap-8 text-sm font-medium text-slate-300">
+                <a href="#about" class="hover:text-indigo-400 transition-colors">About</a>
+                <a href="#experience" class="hover:text-indigo-400 transition-colors">Experience</a>
+                <a href="#projects" class="hover:text-indigo-400 transition-colors">Projects</a>
+                <a href="#skills" class="hover:text-indigo-400 transition-colors">Skills</a>
+                <a href="#certifications" class="hover:text-indigo-400 transition-colors">Certifications</a>
+                <a href="#contact" class="px-4 py-2 bg-indigo-600 hover:bg-indigo-500 text-white rounded-full font-semibold transition-all shadow-lg shadow-indigo-600/30">Hire Me</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Hero Section -->
+    <section class="min-h-screen pt-32 pb-20 flex items-center justify-center relative z-10 px-6">
+        <div class="max-w-5xl mx-auto text-center">
+            <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full glass-card text-indigo-300 text-xs font-semibold mb-6 border border-indigo-500/30">
+                <span class="w-2 h-2 rounded-full bg-emerald-400 animate-ping"></span>
+                Final Year B.Tech Computer Engineering @ MITAOE (8.37 CGPA)
+            </div>
+            <h1 class="text-5xl md:text-7xl font-extrabold tracking-tight mb-6 leading-tight">
+                Building <span class="text-gradient">Production-Grade</span> Software, Cloud Architectures & AI Systems
+            </h1>
+            <p class="text-lg md:text-xl text-slate-400 max-w-3xl mx-auto mb-10 leading-relaxed">
+                Full-Stack Developer, DevOps Enthusiast & AI Researcher with hands-on corporate internship experience at Infosys Springboard, Maincrafts, Cisco & VaultofCodes.
+            </p>
+            <div class="flex flex-wrap justify-center items-center gap-4">
+                <a href="#projects" class="px-8 py-4 bg-indigo-600 hover:bg-indigo-500 text-white font-bold rounded-xl transition-all transform hover:-translate-y-1 shadow-lg shadow-indigo-600/30">
+                    Explore Projects <i class="fa-solid fa-arrow-right ml-2"></i>
+                </a>
+                <a href="https://github.com/yash-D-Dalavi" target="_blank" class="px-8 py-4 glass-card hover:bg-slate-800 text-white font-semibold rounded-xl transition-all transform hover:-translate-y-1 border border-slate-700">
+                    <i class="fa-brands fa-github mr-2"></i> GitHub Profile
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section (Extracted directly from Certificates & Credentials) -->
+    <section id="experience" class="py-20 relative z-10 px-6 bg-slate-900/40">
+        <div class="max-w-6xl mx-auto">
+            <h2 class="text-3xl font-bold text-center mb-4"><span class="text-gradient">Work Experience</span> & Internships</h2>
+            <p class="text-slate-400 text-center mb-12 max-w-2xl mx-auto">Hands-on experience delivering enterprise-grade software solutions across full-stack development, cloud deployment, and AI models.</p>
+
+            <div class="space-y-6">
+                <!-- Maincrafts Technology -->
+                <div class="glass-card p-6 md:p-8 rounded-2xl border border-slate-800 relative">
+                    <div class="flex flex-wrap justify-between items-start gap-4 mb-4">
+                        <div>
+                            <h3 class="text-xl font-bold text-white">Cloud & DevOps Engineering Intern</h3>
+                            <p class="text-indigo-400 font-medium">Maincrafts Technology • Remote</p>
+                        </div>
+                        <span class="px-3 py-1 bg-slate-800 text-slate-300 text-xs font-semibold rounded-full">Jul 2026 – Sep 2026</span>
+                    </div>
+                    <ul class="list-disc list-inside text-slate-300 text-sm space-y-2">
+                        <li>Containerized multi-tier microservices applications using Docker and Docker Compose.</li>
+                        <li>Configured automated CI/CD deployment pipelines on AWS (EC2, S3, CloudFront) using GitHub Actions.</li>
+                        <li>Automated database backup scripts and implemented zero-downtime deployment workflows.</li>
+                    </ul>
+                </div>
+
+                <!-- Infosys Springboard -->
+                <div class="glass-card p-6 md:p-8 rounded-2xl border border-slate-800">
+                    <div class="flex flex-wrap justify-between items-start gap-4 mb-4">
+                        <div>
+                            <h3 class="text-xl font-bold text-white">Software Engineer Intern</h3>
+                            <p class="text-indigo-400 font-medium">Infosys Springboard • Virtual Internship 6.0</p>
+                        </div>
+                        <span class="px-3 py-1 bg-slate-800 text-slate-300 text-xs font-semibold rounded-full">Sep 2025 – Nov 2025</span>
+                    </div>
+                    <ul class="list-disc list-inside text-slate-300 text-sm space-y-2">
+                        <li>Architected and developed 'StarWall / BragBoard', a full-stack employee recognition platform using React.js and FastAPI.</li>
+                        <li>Handled JWT user authentication, role-based access control, PostgreSQL schema design, and UAT validation.</li>
+                        <li>Adhered to corporate coding standards, agile sprint ceremonies, and peer code reviews.</li>
+                    </ul>
+                </div>
+
+                <!-- VaultofCodes -->
+                <div class="glass-card p-6 md:p-8 rounded-2xl border border-slate-800">
+                    <div class="flex flex-wrap justify-between items-start gap-4 mb-4">
+                        <div>
+                            <h3 class="text-xl font-bold text-white">AI & Prompt Engineering Intern</h3>
+                            <p class="text-indigo-400 font-medium">VaultofCodes.in • Remote</p>
+                        </div>
+                        <span class="px-3 py-1 bg-slate-800 text-slate-300 text-xs font-semibold rounded-full">Aug 2025 – Sep 2025</span>
+                    </div>
+                    <ul class="list-disc list-inside text-slate-300 text-sm space-y-2">
+                        <li>Designed, benchmarked, and optimized structured prompt engineering workflows for LLM API integration.</li>
+                        <li>Executed Python automated data cleaning and preprocessing pipelines for generative AI models.</li>
+                    </ul>
+                </div>
+
+                <!-- Cisco AICTE -->
+                <div class="glass-card p-6 md:p-8 rounded-2xl border border-slate-800">
+                    <div class="flex flex-wrap justify-between items-start gap-4 mb-4">
+                        <div>
+                            <h3 class="text-xl font-bold text-white">Cybersecurity Intern</h3>
+                            <p class="text-indigo-400 font-medium">Cisco Networking Academy & AICTE</p>
+                        </div>
+                        <span class="px-3 py-1 bg-slate-800 text-slate-300 text-xs font-semibold rounded-full">Jun 2025 – Aug 2025</span>
+                    </div>
+                    <ul class="list-disc list-inside text-slate-300 text-sm space-y-2">
+                        <li>Performed network vulnerability assessments, security threat identification, and packet analysis.</li>
+                        <li>Implemented security protocols, firewalls, and network protection strategies following Cisco guidelines.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="py-20 relative z-10 px-6">
+        <div class="max-w-7xl mx-auto">
+            <h2 class="text-3xl font-bold text-center mb-4"><span class="text-gradient">Featured Projects</span></h2>
+            <p class="text-slate-400 text-center mb-12 max-w-2xl mx-auto">Real-world full-stack apps, AI research implementations, and cloud architectures.</p>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Project 1: EV Wind AI -->
+                <div class="glass-card p-6 rounded-2xl border border-slate-800 flex flex-col justify-between">
+                    <div>
+                        <div class="flex justify-between items-center mb-4">
+                            <span class="text-xs font-bold text-emerald-400 px-3 py-1 bg-emerald-950/60 rounded-full border border-emerald-800">AI / Deep Learning</span>
+                            <i class="fa-solid fa-wind text-indigo-400 text-xl"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-white mb-2">EV-Wind-AI (Physics-Informed Neural Network)</h3>
+                        <p class="text-slate-400 text-sm mb-4">Physics-Informed Deep Learning framework embedding Betz's Law into loss function for vehicle-mounted wind energy prediction.</p>
+                        <div class="flex flex-wrap gap-2 mb-6">
+                            <span class="text-xs bg-slate-800 text-slate-300 px-2.5 py-1 rounded">Python</span>
+                            <span class="text-xs bg-slate-800 text-slate-300 px-2.5 py-1 rounded">PINN / LSTM</span>
+                            <span class="text-xs bg-slate-800 text-slate-300 px-2.5 py-1 rounded">SHAP</span>
+                            <span class="text-xs bg-slate-800 text-slate-300 px-2.5 py-1 rounded">Streamlit</span>
+                        </div>
+                    </div>
+                    <a href="https://github.com/yash-D-Dalavi/EV-Wind-AI" target="_blank" class="text-indigo-400 hover:text-indigo-300 text-sm font-semibold flex items-center gap-2">View Source Code <i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+
+                <!-- Project 2: DevOps Production Stack -->
+                <div class="glass-card p-6 rounded-2xl border border-slate-800 flex flex-col justify-between">
+                    <div>
+                        <div class="flex justify-between items-center mb-4">
+                            <span class="text-xs font-bold text-indigo-400 px-3 py-1 bg-indigo-950/60 rounded-full border border-indigo-800">Cloud / DevOps</span>
+                            <i class="fa-brands fa-docker text-indigo-400 text-xl"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-white mb-2">DevOps Multi-Container Cloud Stack</h3>
+                        <p class="text-slate-400 text-sm mb-4">Enterprise microservices architecture with Docker Compose, Nginx reverse proxy, PostgreSQL, Redis, Prometheus & Grafana.</p>
+                        <div class="flex flex-wrap gap-2 mb-6">
+                            <span class="text-xs bg-slate-800 text-slate-300 px-2.5 py-1 rounded">Docker</span>
+                            <span class="text-xs bg-slate-800 text-slate-300 px-2.5 py-1 rounded">AWS</span>
+                            <span class="text-xs bg-slate-800 text-slate-300 px-2.5 py-1 rounded">Prometheus</span>
+                            <span class="text-xs bg-slate-800 text-slate-300 px-2.5 py-1 rounded">GitHub Actions</span>
+                        </div>
+                    </div>
+                    <a href="https://github.com/yash-D-Dalavi/devops-production-portfolio" target="_blank" class="text-indigo-400 hover:text-indigo-300 text-sm font-semibold flex items-center gap-2">View Source Code <i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+
+                <!-- Project 3: BragBoard -->
+                <div class="glass-card p-6 rounded-2xl border border-slate-800 flex flex-col justify-between">
+                    <div>
+                        <div class="flex justify-between items-center mb-4">
+                            <span class="text-xs font-bold text-purple-400 px-3 py-1 bg-purple-950/60 rounded-full border border-purple-800">Full-Stack Web</span>
+                            <i class="fa-solid fa-users text-indigo-400 text-xl"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-white mb-2">BragBoard Employee Recognition</h3>
+                        <p class="text-slate-400 text-sm mb-4">Internal recognition platform featuring shout-outs, peer tags, reactions, JWT security, and admin telemetry dashboard.</p>
+                        <div class="flex flex-wrap gap-2 mb-6">
+                            <span class="text-xs bg-slate-800 text-slate-300 px-2.5 py-1 rounded">React.js</span>
+                            <span class="text-xs bg-slate-800 text-slate-300 px-2.5 py-1 rounded">FastAPI</span>
+                            <span class="text-xs bg-slate-800 text-slate-300 px-2.5 py-1 rounded">PostgreSQL</span>
+                            <span class="text-xs bg-slate-800 text-slate-300 px-2.5 py-1 rounded">Tailwind</span>
+                        </div>
+                    </div>
+                    <a href="https://github.com/yash-D-Dalavi" target="_blank" class="text-indigo-400 hover:text-indigo-300 text-sm font-semibold flex items-center gap-2">View Repository <i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Technical Skills Section -->
+    <section id="skills" class="py-20 relative z-10 px-6 bg-slate-900/40">
+        <div class="max-w-6xl mx-auto">
+            <h2 class="text-3xl font-bold text-center mb-4"><span class="text-gradient">Technical Capabilities</span></h2>
+            <p class="text-slate-400 text-center mb-12 max-w-2xl mx-auto">Core domain skills spanning full-stack web, cloud, DevOps, and machine learning.</p>
+
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-6">
+                <div class="glass-card p-6 rounded-xl text-center">
+                    <i class="fa-brands fa-python text-4xl text-amber-400 mb-3"></i>
+                    <h4 class="font-bold text-white mb-1">Languages</h4>
+                    <p class="text-xs text-slate-400">Python, Java, C++, SQL, JavaScript</p>
+                </div>
+                <div class="glass-card p-6 rounded-xl text-center">
+                    <i class="fa-brands fa-aws text-4xl text-orange-400 mb-3"></i>
+                    <h4 class="font-bold text-white mb-1">Cloud & DevOps</h4>
+                    <p class="text-xs text-slate-400">AWS (S3, EC2), Docker, CI/CD, Linux</p>
+                </div>
+                <div class="glass-card p-6 rounded-xl text-center">
+                    <i class="fa-brands fa-react text-4xl text-cyan-400 mb-3"></i>
+                    <h4 class="font-bold text-white mb-1">Web & Backend</h4>
+                    <p class="text-xs text-slate-400">React.js, FastAPI, Node.js, REST APIs</p>
+                </div>
+                <div class="glass-card p-6 rounded-xl text-center">
+                    <i class="fa-solid fa-brain text-4xl text-purple-400 mb-3"></i>
+                    <h4 class="font-bold text-white mb-1">Data & AI</h4>
+                    <p class="text-xs text-slate-400">PyTorch, TensorFlow, SHAP, PostgreSQL</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Certifications Section (Verifiable Evidence) -->
+    <section id="certifications" class="py-20 relative z-10 px-6">
+        <div class="max-w-6xl mx-auto">
+            <h2 class="text-3xl font-bold text-center mb-12"><span class="text-gradient">Industry Certifications</span></h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <div class="glass-card p-6 rounded-xl border border-slate-800">
+                    <i class="fa-brands fa-aws text-3xl text-orange-400 mb-2"></i>
+                    <h4 class="font-bold text-white">AWS Certified Cloud Practitioner</h4>
+                    <p class="text-xs text-slate-400 mt-1">Amazon Web Services</p>
+                </div>
+                <div class="glass-card p-6 rounded-xl border border-slate-800">
+                    <i class="fa-solid fa-shield-halved text-3xl text-red-400 mb-2"></i>
+                    <h4 class="font-bold text-white">Oracle Cloud AI Foundations Associate</h4>
+                    <p class="text-xs text-slate-400 mt-1">Oracle University</p>
+                </div>
+                <div class="glass-card p-6 rounded-xl border border-slate-800">
+                    <i class="fa-solid fa-microchip text-3xl text-emerald-400 mb-2"></i>
+                    <h4 class="font-bold text-white">Fundamentals of Deep Learning</h4>
+                    <p class="text-xs text-slate-400 mt-1">NVIDIA Deep Learning Institute</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact & Footer Section -->
+    <footer id="contact" class="py-16 relative z-10 px-6 border-t border-slate-800/80 glass-card">
+        <div class="max-w-4xl mx-auto text-center">
+            <h2 class="text-3xl font-bold text-white mb-4">Let's Connect & Build Together</h2>
+            <p class="text-slate-400 mb-8">Currently open for Software Engineering, DevOps, and Full-Stack Opportunities.</p>
+            <div class="flex justify-center gap-6 text-2xl mb-8">
+                <a href="mailto:yashdalavi802@gmail.com" class="text-slate-400 hover:text-indigo-400 transition-colors"><i class="fa-solid fa-envelope"></i></a>
+                <a href="https://github.com/yash-D-Dalavi" target="_blank" class="text-slate-400 hover:text-indigo-400 transition-colors"><i class="fa-brands fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/yash-dalavi-8080402a2/" target="_blank" class="text-slate-400 hover:text-indigo-400 transition-colors"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="https://leetcode.com/u/yash1600/" target="_blank" class="text-slate-400 hover:text-indigo-400 transition-colors"><i class="fa-solid fa-code"></i></a>
+            </div>
+            <p class="text-xs text-slate-500">&copy; 2026 Yash Dhananjay Dalavi. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Canvas Animation Script -->
+    <script>
+        const canvas = document.getElementById('bg-canvas');
+        const ctx = canvas.getContext('2d');
+        let particles = [];
+
+        function resize() {
+            canvas.width = window.innerWidth;
+            canvas.height = window.innerHeight;
+        }
+        window.addEventListener('resize', resize);
+        resize();
+
+        for (let i = 0; i < 60; i++) {
+            particles.push({
+                x: Math.random() * canvas.width,
+                y: Math.random() * canvas.height,
+                radius: Math.random() * 2 + 1,
+                dx: (Math.random() - 0.5) * 0.5,
+                dy: (Math.random() - 0.5) * 0.5
+            });
+        }
+
+        function animate() {
+            ctx.clearRect(0, 0, canvas.width, canvas.height);
+            ctx.fillStyle = '#6366f1';
+            particles.forEach(p => {
+                ctx.beginPath();
+                ctx.arc(p.x, p.y, p.radius, 0, Math.PI * 2);
+                ctx.fill();
+                p.x += p.dx;
+                p.y += p.dy;
+                if (p.x < 0 || p.x > canvas.width) p.dx *= -1;
+                if (p.y < 0 || p.y > canvas.height) p.dy *= -1;
+            });
+            requestAnimationFrame(animate);
+        }
+        animate();
+    </script>
+</body>
+</html>
